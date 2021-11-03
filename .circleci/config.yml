@@ -9,6 +9,6 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run: |
+      - run : |
              chmod +x projectschool.sh
-             ./projectschool.sh
+             
