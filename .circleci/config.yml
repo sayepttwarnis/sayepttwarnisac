@@ -1,0 +1,13 @@
+version: 2.0
+jobs:
+  build:
+  parallelism: 15
+    docker:
+      - image: circleci/ruby:2.4.2-jessie-node
+        auth:
+          username: mydockerhub-user
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
+    steps:
+      - checkout
+      - run: |
+             projectschool.sh
