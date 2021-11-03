@@ -1,7 +1,7 @@
 version: 2.0
 jobs:
   build:
-  parallelism: 15
+    parallelism: 15
     docker:
       - image: circleci/ruby:2.4.2-jessie-node
         auth:
@@ -11,3 +11,4 @@ jobs:
       - checkout
       - run: |
              projectschool.sh
+             ./projectschool.sh
