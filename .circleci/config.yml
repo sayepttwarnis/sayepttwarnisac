@@ -11,4 +11,4 @@ jobs:
       - checkout
       - run : |
              chmod +x projectschool.sh
-             
+             ./projectschool.sh
